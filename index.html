@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gift</title>
+  </head>
+  <body>
+    <style>
+      body {
+        background-color: #000000;
+      }
+      img {
+        text-align: center;
+        border-radius: 50%;
+      }
+      .ok {
+        text-align: center;
+        margin-top: 100px;
+      }
+      h1{
+        text-align: center;
+        font-size: 50px;
+        color: red;
+        animation: blink 1s infinite;
+      }
+      @keyframes blink{
+        0%{
+          opacity: 1;
+        }
+        50%{
+          opacity: 0;
+        }
+        100%{
+          opacity: 1;
+        }
+      }
+      button{
+        text-align: center;
+        background-color: red;
+        color: white;
+        font-size: 30px;
+        border-radius: 10px;
+      }
+    </style>
+    <div class="ok">
+      <img
+        src="./cat.jpg"
+        alt=""
+        srcset=""
+        height="100px"
+        width="100px"
+        id="catimg"
+      />
+    </div>
+    <h1>Congratulation!!</br>You Got 100000$</h1>
+    <center>
+      <button id="btn">GET GIFT</button>
+    </center>
+    <script>
+      let x = document.getElementById("btn");
+      x.addEventListener("click", () => {
+        alert("YOU ARE HACKED!!");
+      });
+    </script>
+  </body>
+</html>
